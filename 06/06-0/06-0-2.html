@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        sessionStorage.setItem("06-0-2", "true")
+        if(sessionStorage.getItem("04-X") == "true"){
+            const p = document.getElementById("key")
+            p.textContent = "V zásuvce stolu kapesníček. Jsou na něm drobné skvrny zaschlé krve a jemná vůně, která odpovídá parfému, který Lady Eleanor používá. Po rozbalení kapesníku nalezneš malý železný klíč, který odpovídá zámku ve sklepě."
+        }
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Pracovna Lady Eleanor Redmayne (pokoj hosta)</h2>
+        <p id="key">
+            V zásuvce stolu kapesníček. Jsou na něm drobné skvrny zaschlé krve a jemná vůně, která odpovídá parfému, který Lady Eleanor používá. Po rozbalení kapesníku nalezneš malý železný klíč.
+        </p>  
+        <ul>
+            <li><a href="./06-0.html">Zkusti něco jiného</a></li>
+        </ul>
+    </main>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function removeVisited() {
+            if(sessionStorage.getItem("01-0") == "true"){
+                document.getElementById("01-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("01-1") == "true"){
+                document.getElementById("01-1").parentElement.remove()
+            }
+            if(sessionStorage.getItem("01-2") == "true"){
+                document.getElementById("01-2").parentElement.remove()
+            }
+            if(sessionStorage.getItem("01-3") == "true"){
+                document.getElementById("01-3").parentElement.remove()
+            }
+            const list = document.getElementById("list")
+            if(list.children.length == 0){
+                const item = document.createElement("li")
+                const link = document.createElement("a")
+                link.href = "../02/02.html"
+                link.textContent = "Je čas jít"
+                item.appendChild(link)
+                list.appendChild(item)
+            }
+        }
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Knihovna mrtvého muže</h2>
+        <p>
+            Mlžný večer zalévá ulici jemným deštěm, když přijíždíš ke starému sídlu Sira Henryho Blackwella. Po zazvonění tě uvítá Hugo Drummond, majordomus, jehož unavené oči a    roztřesený hlas svědčí o šoku. "Pane Blackwoode, čekali jsme vás," řekne, zatímco tě vede dlouhou chodbou. Dveře knihovny jsou zamčené. Klíče visí na háčku u dveří.
+        </p>
+        <p>
+            Uvnitř je scéna jak z hororu: Sir Henry sedí zhroucený na křesle u krbu, oči má otevřené, ale bez života. Na jeho hrudi je krvavý symbol černé růže. Stůl vedle něj je převrácený, knihy rozházené po podlaze, ale žádné stopy po násilném vstupu do místnosti.
+        </p>
+        <p>
+            Knihovna je místnost plná vysokých regálů s knihami od podlahy ke stropu. Na stole je zbytková sklenice vína a otevřený dopis. Oheň v krbu už téměř vyhasl, zanechává slabý zápach spáleného papíru.
+        </p>    
+        <ul id="list">
+            <li><a href="./01-0.html" id="01-0">Prozkoumat tělo oběti</a></li>
+            <li><a href="./01-1.html" id="01-1">Prozkoumat okolí</a></li>
+            <li><a href="./01-2.html" id="01-2">Vyslechnout majordoma Drummonda</a></li>
+            <li><a href="./01-3.html" id="01-3">Prohlédnout krb</a></li>
+        </ul>
+    </main>
+</body>
+</html>

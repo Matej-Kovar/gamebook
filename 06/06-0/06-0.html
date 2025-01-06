@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            if(sessionStorage.getItem("06-0-0") == "true"){
+                document.getElementById("06-0-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("06-0-1") == "true"){
+                document.getElementById("06-0-1").parentElement.remove()
+            }
+            if(sessionStorage.getItem("06-0-2") == "true"){
+                document.getElementById("06-0-2").parentElement.remove()
+            }
+        }
+
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Pracovna Lady Eleanor Redmayne (pokoj hosta)</h2>
+        <p>
+            Pokoj Lady Eleanor je upravený a elegantní, plný vůně parfému. Na stole leží několik knih, jejichž názvy se týkají historie, filozofie a poezie. Na první pohled nic podezřelého, ale při bližším ohledání si všimneš, že jedna kniha je položená naruby. Pod ní je zastrčený dopis. U postele stojí noční stolek.
+        <ul id="list">
+            <li><a href="./06-0-0.html" id="06-0-0">Dopis</a></li>
+            <li><a href="./06-0-1.html" id="06-0-1">Noční stolek</a></li>
+            <li><a href="./06-0-2.html" id="06-0-2">Stůl</a></li>
+            <li><a href="./06.html" id="06-1-7">Jít zpět</a></li>
+        </ul>
+    </main>
+</body>
+</html>

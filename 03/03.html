@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            if(sessionStorage.getItem("03-0") == "true"){
+               const letter =  document.getElementById("03-0")
+               letter.textContent = "Prozkoumat sklep"
+               letter.href = "../04/04.html"
+            }
+            if(sessionStorage.getItem("04") == "true"){
+                const letter =  document.getElementById("03-0")
+                sessionStorage.removeItem("04-0")
+                sessionStorage.removeItem("04-1")
+                letter.textContent = "Promluvit si s Drummondem"
+                letter.href = "../05/05.html"
+            }
+            if(sessionStorage.getItem("05") == "true"){
+                document.getElementById("03-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("01-2") == "true"){A
+                document.getElementById("01-2").parentElement.remove()
+            }
+            if(sessionStorage.getItem("01-3") == "true"){
+                document.getElementById("01-3").parentElement.remove()
+            }
+            sessionStorage.setItem("03-1-0", "false")
+            sessionStorage.setItem("03-1-1", "false")
+            sessionStorage.setItem("03-1-2", "false")
+            sessionStorage.setItem("03-1-3", "false")
+            sessionStorage.setItem("03-1-4", "false")
+            sessionStorage.setItem("03-1-5", "false")
+            sessionStorage.setItem("03-1-6", "false")
+            sessionStorage.setItem("03-2-0", "false")
+            sessionStorage.setItem("03-2-1", "false")
+            sessionStorage.setItem("03-2-2", "false")
+        }
+
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Obývací místnost v domě sira Henryho</h2>
+        <p>
+            Po prozkoumání místa činu je čas prozkoumat některé stopy.
+        </p>
+        <ul>
+            <li><a href="./03-0.html" id="03-0">Prozkoumat dopis</a></li>
+            <li><a href="./03-1/03-1.html">Vyslechnout manželku</a></li>
+            <li><a href="./03-2/03-2.html">Vyslechnout služebnou</a></li>
+            <li><a href="../06/06.html">Prohledat dům</a></li>
+        </ul>
+    </main>
+</body>
+</html>

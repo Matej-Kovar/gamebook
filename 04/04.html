@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    window.onload = function (){
+        sessionStorage.setItem("04-X", "true")
+        if(sessionStorage.getItem("06-0-2") == "true"){
+            if(sessionStorage.getItem("04-0") == "true"){
+                document.getElementById("04-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("04-1") == "true"){
+                document.getElementById("04-1").parentElement.remove()
+            }
+        } else {
+            const list = document.getElementById("list")
+            const h3 = document.createElement("h3")
+            h3.textContent = "Nemáš klíč"
+            h3.classList.add("warning")
+            list.parentElement.insertBefore(h3, list)
+            const pars = document.getElementsByTagName("p")
+            let temp = pars.length
+            let offset = 0
+            for (let i = 0; i < temp; i++) {
+                const element = pars[i - offset];
+                if(element.id != "keep"){
+                    element.remove();
+                    offset++;
+                }
+            }
+
+        }
+    }
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Sklep v domě sira Henryho</h2>
+        <p id="keep">
+            Po přečtení deníku a zmínce, že Hugo Drummond možná něco ukryl ve sklepě, se rozhodneš tento prostor prozkoumat.
+        </p>
+        <p id="aaa">
+            Pomalým krokem scházíš po vrzajících dřevěných schodech do sklepa. Vzduch je vlhký a těžký, cítíš slabý zápach plesnivin a chemikálií. Slabé světlo tvé lucerny osvětluje kamenné zdi a staré bedny naskládané na sebe.
+        </p>
+        <p id="aaaa">
+            Sklep je malá místnost s kamennou podlahou a regály plnými starých knih, lahviček a harampádí. Kolem leží bedny. Některé jsou uzavřené, jiné pootevřené, odhalující zaprášené lahve a hromady papírů. Na jednom z regálů stojí řada lahviček, některé popsané názvy jako „rtuť“, „arsen“ nebo „éter“.
+        </p> 
+        <ul id="list">
+            <li><a href="./04-0.html" id="04-0">Prohledat bendy</a></li>
+            <li><a href="./04-1.html" id="04-1">Prohledat chemikálie</a></li>
+            <li><a href="../03/03.html" id="04-2">Jít zpět</a></li>
+        </ul>
+    </main>
+</body>
+</html>

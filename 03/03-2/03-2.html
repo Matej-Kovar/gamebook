@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            const list = document.getElementById("list")
+            if(sessionStorage.getItem("04") == "true"){
+                if(sessionStorage.getItem("03-2-2") == "false"){
+                    const item2 = document.createElement("li") 
+                    const link2 = document.createElement("a")
+                    link2.href = "./03-2-2.html"
+                    link2.id = "03-2-2"
+                    link2.textContent = "Zeptat se na chemikálie"
+                    item2.appendChild(link2)
+                    list.appendChild(item2)
+                }
+            }
+            if(sessionStorage.getItem("03-2-0") == "true"){
+                document.getElementById("03-2-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("03-2-1") == "true"){
+                document.getElementById("03-2-1").parentElement.remove()
+            }
+            const last = document.getElementById("03-2-7")
+            last.parentElement.remove()
+            const item7 = document.createElement("li")
+            item7.appendChild(last)
+            list.appendChild(item7)
+        }
+
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Rozhovor s Emily Carterovou</h2>
+        <p>
+            Najdeš Emily v kuchyni, kde se snaží uklidit zbytky nádobí po večeři. Je mladá, s jasně vyděšeným pohledem. Když tě spatří, její ruce přestanou pracovat a začne se třást.
+        </p>
+        <h3>Emily:</h3>
+        <p>
+            „Pane, já přísahám, že jsem nic neudělala! Jen jsem slyšela... slyšela něco divného.“
+        </p>
+        <ul id="list">
+            <li><a href="./03-2-0.html" id="03-2-0">Vztach se sirem Henrym</a></li>
+            <li><a href="./03-2-1.html" id="03-2-1">Co slyšela</a></li>
+            <li><a href="../03.html" id="03-2-7">Jít zpět</a></li>
+        </ul>
+    </main>
+</body>
+</html>
