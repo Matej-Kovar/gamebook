@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function () {
+            const main = document.getElementById("main")
+            if(sessionStorage.getItem("04") == "true"){
+                if(sessionStorage.getItem("03-3") == "false"){
+                    main.innerHTML = 
+                    `<h2>Kuchyň v domě sira Henryho</h2>
+        <p>
+            Po prozkoumání sklepa se rozhodneš konfrontovat Hugha Drummonda. Najdeš ho nahoře v kuchyni, kde nervózně popíjí čaj. Když vstoupíš, jeho oči tě nervózně sledují, a okamžitě se postaví, jako by chtěl něco skrýt.
+        </p>
+        <h2>Vy (detektiv Blackwood):</h2>
+        <p>
+            „Pane Drummonde, zajímavý sklep, co říkáte? Zdá se, že obsahuje víc než jen harampádí. Myslím, že máte co vysvětlovat.“
+        </p>
+        <h2>Drummond</h2>
+        <p>
+            (Nervózně, s přeskakujícím hlasem) „Já... já nechápu, o čem to mluvíte, pane. To je jen sklad starých věcí, které Sir Henry schovával. Nic víc.“
+        </p>   
+        <ul id="list">
+            <li><a href="./03-2-0.html">Obvinit</a></li> 
+            <li><a href="./03-2-1.html">Zmínit dopisy</a></li> 
+            <li><a href="./03-2-2.html">Zastašit</a></li>
+        </ul>`
+        sessionStorage.setItem("03-3", "true")
+                } else {
+                    document.getElementById("par").textContent = "Už se s vámí nechci bavit"
+                }
+            }
+            
+        }
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main id="main">
+        <h2>Kuchyň v domě sira Henryho</h2>
+        <h3>Drummond</h3>
+        <p id="par">
+            Už jsem vám všechno řekl.
+        </p> 
+        <ul id="list">
+            <li><a href="../03.html">Jít zpět</a></li> 
+        </ul>
+    </main>
+</body>
+</html>

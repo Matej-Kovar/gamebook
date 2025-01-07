@@ -13,16 +13,6 @@
                letter.textContent = "Prozkoumat sklep"
                letter.href = "../04/04.html"
             }
-            if(sessionStorage.getItem("04") == "true"){
-                const letter =  document.getElementById("03-0")
-                sessionStorage.removeItem("04-0")
-                sessionStorage.removeItem("04-1")
-                letter.textContent = "Promluvit si s Drummondem"
-                letter.href = "../05/05.html"
-            }
-            if(sessionStorage.getItem("05") == "true"){
-                document.getElementById("03-0").parentElement.remove()
-            }
             if(sessionStorage.getItem("01-2") == "true"){A
                 document.getElementById("01-2").parentElement.remove()
             }
@@ -57,8 +47,9 @@
         </p>
         <ul>
             <li><a href="./03-0.html" id="03-0">Prozkoumat dopis</a></li>
-            <li><a href="./03-1/03-1.html">Vyslechnout manželku</a></li>
+            <li><a href="./03-1/03-1.html">Vyslechnout ex-manželku</a></li>
             <li><a href="./03-2/03-2.html">Vyslechnout služebnou</a></li>
+            <li><a href="./03-3/03-3.html" id="03-3">Vyslechnout sluhu</a></li>
             <li><a href="../06/06.html">Prohledat dům</a></li>
         </ul>
     </main>
