@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            if(sessionStorage.getItem("06-1-0") == "true"){
+                document.getElementById("06-1-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("06-1-1") == "true"){
+                document.getElementById("06-1-1").parentElement.remove()
+            }
+            if(sessionStorage.getItem("06-1-2") == "true"){
+                document.getElementById("06-1-2").parentElement.remove()
+            }
+        }
+
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Ložnice Sira Henryho Blackwella</h2>
+        <p>
+            Ložnice Sira Henryho působí stroze, jako by její majitel žil jen pro svou práci. Na stolku vedle postele je poloprázdná sklenice vody a několik léků. Na stěnách visí portréty předků, jejichž oči tě sledují, a na polici leží stará zamčená truhla.
+        <ul id="list">
+            <li><a href="./06-1-0.html" id="06-1-0">Zamčená truhla</a></li>
+            <li><a href="./06-1-1.html" id="06-1-1">Lahvička léků</a></li>
+            <li><a href="./06-1-2.html" id="06-1-2">Obrazy</a></li>
+            <li><a href="./06.html" id="06-1-7">Jít zpět</a></li>
+        </ul>
+    </main>
+</body>
+</html>
