@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        window.onload = function (){
+            if(sessionStorage.getItem("06-2-0") == "true"){
+                document.getElementById("06-2-0").parentElement.remove()
+            }
+            if(sessionStorage.getItem("06-2-1") == "true"){
+                document.getElementById("06-2-1").parentElement.remove()
+            }
+            if(sessionStorage.getItem("06-2-2") == "true"){
+                document.getElementById("06-2-2").parentElement.remove()
+            }
+        }
+
+    </script>
+    <header>
+        <nav>
+            <a>Začít znovu</a>
+            <a>O hře</a>
+            <a>Tutorial</a>
+        </nav>
+        <h1>Případ Černé růže</h1>
+    </header>
+    <main>
+        <h2>Zahrada a zadní dvůra</h2>
+        <p>
+            Zahrada je neudržovaná, stromy vrhají strašidelné stíny a na zadním dvoře stojí malý zahradní domek. Půda je měkká, jako by byla nedávno rozrytá.
+        </p>
+        <ul id="list">
+            <li><a href="./06-2-0.html" id="06-2-0">Jáma</a></li>
+            <li><a href="./06-2-1.html" id="06-2-1">Stopy</a></li>
+            <li><a href="../06.html" id="06-2-7">Jít zpět</a></li>
+        </ul>
+    </main>
+</body>
+</html>
