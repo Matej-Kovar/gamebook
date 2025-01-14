@@ -3,15 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Případ Černé růže</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <script>
         sessionStorage.setItem("06-0-2", "true")
-        if(sessionStorage.getItem("04-X") == "true"){
+        window.onload = function () { if(sessionStorage.getItem("04-X") == "true"){
             const p = document.getElementById("key")
             p.textContent = "V zásuvce stolu kapesníček. Jsou na něm drobné skvrny zaschlé krve a jemná vůně, která odpovídá parfému, který Lady Eleanor používá. Po rozbalení kapesníku nalezneš malý železný klíč, který odpovídá zámku ve sklepě."
         }
+    }
     </script>
     <header>
         <nav>

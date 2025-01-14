@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Případ Černé růže</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <script>
         window.onload = function () {
             const main = document.getElementById("main")
-            if(sessionStorage.getItem("04") == "true"){
+            if(sessionStorage.getItem("04-1") == "true"){
                 if(sessionStorage.getItem("03-3") == "false"){
                     main.innerHTML = 
                     `<h2>Kuchyň v domě sira Henryho</h2>
@@ -25,9 +29,9 @@
             (Nervózně, s přeskakujícím hlasem) „Já... já nechápu, o čem to mluvíte, pane. To je jen sklad starých věcí, které Sir Henry schovával. Nic víc.“
         </p>   
         <ul id="list">
-            <li><a href="./03-2-0.html">Obvinit</a></li> 
-            <li><a href="./03-2-1.html">Zmínit dopisy</a></li> 
-            <li><a href="./03-2-2.html">Zastašit</a></li>
+            <li><a href="./03-3-0.html">Obvinit</a></li> 
+            <li><a href="./03-3-1.html">Zmínit dopisy</a></li> 
+            <li><a href="./03-3-2.html">Zastašit</a></li>
         </ul>`
         sessionStorage.setItem("03-3", "true")
                 } else {
