@@ -20,6 +20,7 @@
                     link2.href = "./03-1-2.html"
                     link2.id = "03-1-2"
                     link2.textContent = "Henryho tajemství"
+                    link2.classList.add("main__link")
                     item2.appendChild(link2)
                     list.appendChild(item2)
                 }
@@ -29,6 +30,7 @@
                     link3.href = "./03-1-3.html"
                     link3.id = "03-1-3"
                     link3.textContent = "Chemikálie"
+                    link3.classList.add("main__link")
                     item3.appendChild(link3)
                     list.appendChild(item3)
                 }
@@ -40,17 +42,19 @@
                     link4.href = "./03-1-4.html"
                     link4.id = "03-1-4"
                     link4.textContent = "Drummond?"
+                    link4.classList.add("main__link")
                     item4.appendChild(link4)
                     list.appendChild(item4)
                 }
             }
-            if(sessionStorage.getItem("05") == "true"){
+            if(sessionStorage.getItem("03-3") == "true"){
                 if(sessionStorage.getItem("03-1-5") == "false"){
                     const item5 = document.createElement("li") 
                     const link5 = document.createElement("a")
                     link5.href = "./03-1-5.html"
                     link5.id = "03-1-5"
                     link5.textContent = "Dopisy nalezené ve sklepě"
+                    link5.classList.add("main__link")
                     item5.appendChild(link5)
                     list.appendChild(item5)
                 }
@@ -60,6 +64,7 @@
                     link6.href = "./03-1-6.html"
                     link6.id = "03-1-6"
                     link6.textContent = "Bratrstvo černé růže"
+                    link6.classList.add("main__link")
                     item6.appendChild(link6)
                     list.appendChild(item6)
                 }
@@ -85,20 +90,27 @@
         </nav>
         <h1 class="header__title">Případ Černé růže</h1>
     </header>
-    <main>
-        <h2>Rozhovor s Lady Eleanor</h2>
-        <p>
+    <main class="main">
+        <div class="main__story">
+            <div class="main__picture">
+                <img class="img--responsive" src="/img/Eleanor/Lady-Eleanor.webp" alt="Lady Eleanor">
+            </div>
+            <div class="main__text">
+        <h2 class="main__title">Rozhovor s Lady Eleanor</h2>
+        <p class="main__content">
             Lady Eleanor sedí v salonku, s pohledem zaměřeným do prázdna, v ruce drží sklenku červeného vína. Je elegantně oblečená, ale její chování je nervózní. Když vstoupíš, pomalu odloží sklenku a podívá se na tebe s ledovým klidem.
         </p>
-        <h3>Lady Eleanor:</h3>
-        <p>
+        <h3 class="main__speaker">Lady Eleanor:</h3>
+        <p class="main__content">
             „Pane Blackwoode. Měl jste už dost času na to, abyste našel vraha mého ex-manžela. Tak co jste zjistil?“
         </p>
-        <ul id="list">
-            <li><a href="./03-1-0.html" id="03-1-0">Vztach se sirem Henrym</a></li>
-            <li><a href="./03-1-1.html" id="03-1-1">Důvod návštěvy</a></li>
-            <li><a href="../03.html" id="03-1-7">Jít zpět</a></li>
+            </div>
+        <ul id="list" class="main__reactions">
+            <li><a href="./03-1-0.html" id="03-1-0" class="main__link">Vztach se sirem Henrym</a></li>
+            <li><a href="./03-1-1.html" id="03-1-1" class="main__link">Důvod návštěvy</a></li>
+            <li><a href="../03.html" id="03-1-7" class="main__link">Jít zpět</a></li>
         </ul>
+        </div>
     </main>
 </body>
 </html>
