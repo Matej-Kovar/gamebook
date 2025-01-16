@@ -15,7 +15,9 @@
     padding: 2em;
     margin: 1em;
     padding: 0;
-    max-width: 1440px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1em;
 }
 .header{
     display: flex;
@@ -53,13 +55,6 @@ a:hover{
     font-size: 3em;
     margin: 0;
 }
-.main__story{
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-    align-items: start;
-    gap: 1em;
-}
 .main__picture{
     border-radius: 1em;
     overflow: hidden;
@@ -70,6 +65,15 @@ a:hover{
 }
 .main__speaker{
     font-size: 1.5em;
+}
+.main__story{
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    gap: 1em;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) rgba(255, 255, 255, 0);
 }
 .main__text{
     background-color: var(--dark);
@@ -114,17 +118,14 @@ body{
 h1, h2, h3{
     font-family: Pirata One;
 }
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 645px) {
     .header__nav{
         justify-content: left;
     }
 }
 @media only screen and (min-width: 960px) {
-    .main__story{
-        grid-template-columns: 1fr min-content;
-    }
-    .main__picture{
-        grid-row: auto / span 3;
-        align-self: stretch;
+    .main{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: calc(100vh - 61px - 16px * 3);
     }
 }
