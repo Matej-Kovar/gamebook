@@ -75,6 +75,9 @@ a:hover{
     scrollbar-width: thin;
     scrollbar-color: var(--secondary) rgba(255, 255, 255, 0);
 }
+.story--large{
+    grid-column: 1 / -1;
+}
 .main__text{
     background-color: var(--dark);
     padding: 2em;
