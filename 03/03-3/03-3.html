@@ -16,22 +16,22 @@
             if(sessionStorage.getItem("04-1") == "true"){
                 if(sessionStorage.getItem("03-3") == "false"){
                     main.innerHTML = 
-                    `<h2>Kuchyň v domě sira Henryho</h2>
-        <p>
+                    `<h2 class="main__title">Kuchyň v domě sira Henryho</h2>
+        <p class="main__content">
             Po prozkoumání sklepa se rozhodneš konfrontovat Hugha Drummonda. Najdeš ho nahoře v kuchyni, kde nervózně popíjí čaj. Když vstoupíš, jeho oči tě nervózně sledují, a okamžitě se postaví, jako by chtěl něco skrýt.
         </p>
-        <h2>Vy (detektiv Blackwood):</h2>
-        <p>
+        <h3 class="main__speaker">Vy (detektiv Blackwood):</h3>
+        <p class="main__content">
             „Pane Drummonde, zajímavý sklep, co říkáte? Zdá se, že obsahuje víc než jen harampádí. Myslím, že máte co vysvětlovat.“
         </p>
-        <h2>Drummond</h2>
-        <p>
+        <h3 class="main__speaker">Drummond</h3>
+        <p class="main__content">
             (Nervózně, s přeskakujícím hlasem) „Já... já nechápu, o čem to mluvíte, pane. To je jen sklad starých věcí, které Sir Henry schovával. Nic víc.“
         </p>   
         <ul id="list">
-            <li><a href="./03-3-0.html">Obvinit</a></li> 
-            <li><a href="./03-3-1.html">Zmínit dopisy</a></li> 
-            <li><a href="./03-3-2.html">Zastašit</a></li>
+            <li><a href="./03-3-0.html" class="main__link">Obvinit</a></li> 
+            <li><a href="./03-3-1.html" class="main__link">Zmínit dopisy</a></li> 
+            <li><a href="./03-3-2.html" class="main__link">Zastašit</a></li>
         </ul>`
         sessionStorage.setItem("03-3", "true")
                 } else {
@@ -48,15 +48,22 @@
         </nav>
         <h1 class="header__title">Případ Černé růže</h1>
     </header>
-    <main id="main">
-        <h2>Kuchyň v domě sira Henryho</h2>
+    <main class="main" id="main"> 
+        <div class="main__picture">
+            <img class="img--responsive" src="/img/Henry/Sir-Henry.webp" alt="tělo sira Henryho">
+        </div>
+        <div class="main__story">
+        <div class="main__text">
+        <h2 class="main__title">Kuchyň v domě sira Henryho</h2>
         <h3>Drummond</h3>
-        <p id="par">
+        <p id="par" class="main__content">
             Už jsem vám všechno řekl.
         </p> 
-        <ul id="list">
-            <li><a href="../03.html">Jít zpět</a></li> 
+        </div>
+        <ul id="list" class="main__reactions">
+            <li><a href="../03.html" class="main__link">Jít zpět</a></li> 
         </ul>
+        </div>
     </main>
 </body>
 </html>

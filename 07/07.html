@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Případ Černé růže</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Pirata+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
 </head>
 <body>
     <header class="header">
@@ -13,19 +17,28 @@
         </nav>
         <h1 class="header__title">Případ Černé růže</h1>
     </header>
-    <main>
-        <h2>Obývací místnost v domě sira Henryho</h2>
-        <p>
+    <main class="main"> 
+        <div class="main__picture">
+            <img class="img--responsive" src="/img/Henry/Sir-Henry.webp" alt="tělo sira Henryho">
+        </div>
+        <div class="main__story">
+        <div class="main__text">
+        <h2 class="main__title">Obývací místnost v domě sira Henryho</h2>
+        <p class="main__content">
             Rozhodl jses, že už máš dost důkazů a jsi schopen odhalit vraha. Konfrontuješ podezřelého před ostatními obyvateli domu. V knihovně jsou shromážděni Lady Eleanor, Hugo Drummond, Emily Carterová a inspektor Graves. Napětí ve vzduchu je téměř hmatatelné.
         </p>
-        <h3>inspektor Graves</h3>
-        <p>„Blackwoode, věřím, že jste připraven odhalit vraha. Kdo je podle vás zodpovědný za smrt Sira Henryho?“</p>
-        <ul>
-            <li><a href="./07-0/07-0.html">Obvinit Lady Eleanor</a></li>
-            <li><a href="./07-1/07-1.html">Obvinit Huga Drummonda</a></li>
-            <li><a href="./07-2/07-2.html">Obvinit Emily Carterovou</a></li>
-            <li><a href="./07-3/07-3.html">Obvinit Inspektora Gravese</a></li>
+        <h3 class="main__speaker">Inspektor Graves</h3>
+        <p class="main__content">
+            „Blackwoode, věřím, že jste připraven odhalit vraha. Kdo je podle vás zodpovědný za smrt Sira Henryho?“
+        </p>
+        </div>
+        <ul class="main__reactions">
+            <li><a href="./07-0/07-0.html" class="main__link">Obvinit Lady Eleanor</a></li>
+            <li><a href="./07-1/07-1.html" class="main__link">Obvinit Huga Drummonda</a></li>
+            <li><a href="./07-2/07-2.html" class="main__link">Obvinit Emily Carterovou</a></li>
+            <li><a href="./07-3/07-3.html" class="main__link">Obvinit Inspektora Gravese</a></li>
         </ul>
+        </div>
     </main>
 </body>
 </html>
